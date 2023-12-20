@@ -1,0 +1,21 @@
+Mudah:
+1. di page keranjang, seharusnya ada ikon + dan - 
+2. di page keranjang, seharusnya ada fitur delete buat ngehapus produk tertentu yg mau dihapus costumer ajaa, tapi yg project kita ini pas ngeklik hapus di page keranjang malah kehapus semua produk di keranjangnya
+3. Validation (harus mengisi data sebelum mengisi form pemesanan)
+4. Pas login yg passwordnya masih keliatan, keamanannya kurang.
+
+Medium:
+1. profile untuk admin & user belum ada
+2. seharusnya kalau barang udah sold out itu gabisa di checkout lagi, tapi yg kita malah masih bisa di checkout dan keterangan “stock” nya itu jadi ada minusnya, harusnya kalo habis itu nol bukan minus dan gabisa di checkout
+3. History pesanan
+4. Laporan buat admin bisa di print atau save
+
+Sulit:
+1. Bukti transaksi Masuk ke email admin
+2. No resi buat transaksi
+3. Kontak person utk user menghubungi admin bila ada kendala
+4. Di dashboard admin ada laporan pendptan masuk , serta stok, user dan admin.
+5. Di dashboard admin yg invoice, saat kita udah mesan 2 item , malah munculnya cuma 1 item
+
+Sulit Bingit:
+1. Cara mengetahui perjalanan nya terkirim
