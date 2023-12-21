@@ -128,6 +128,7 @@
                                         <ul class="nav navbar-nav navbar-right">
                                             <li>
                                                 <?php 
+												// echo
                                                 $keranjang = ''.$this->cart->total_items(). ' items';
                                                 ?>
 

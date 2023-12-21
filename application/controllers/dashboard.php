@@ -70,11 +70,14 @@ class Dashboard extends CI_Controller
 		for ($i = 0; $i < sizeof($keranjang); $i++) {
 			$total += $keranjang[$i]->jumlah * $keranjang[$i]->harga;
 		}
-
+		
+		$total_items = sizeof($keranjang);
+		// echo "<pre>";
+		// print_r($keranjang);die;
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/footer');
-		$this->load->view('keranjang', array('keranjang' => $keranjang, 'total' => $total));
+		$this->load->view('keranjang', array('keranjang' => $keranjang, 'total' => $total, 'total_items' => $total_items));
 	}
 
 	public function tambah_jumlah()
