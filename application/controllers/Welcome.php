@@ -1,7 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends CI_Controller
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+
+		$this->load->model('model_pesanan');
+		$this->load->model('model_barang');
+	}
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +29,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['barang'] = $this->model_barang->tampil_data()->result();
+		$data['barang'] = $this->model_barang->tampil_data();
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
 		$this->load->view('dashboard', $data);

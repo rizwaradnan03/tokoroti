@@ -33,11 +33,16 @@ class Model_pesanan extends CI_Model
         return $this->db->get()->result();
     }
 
+	public function update_jumlah_pesanan($pesanan, $jumlah_baru)
+	{
+		$this->db->where('id', $pesanan);
+		$this->db->update('tb_pesanan', array('jumlah' => $jumlah_baru));
+	}
 
     // Find One
     public function get_pesanan_by_id($id)
     {
-        return $this->db->get_where('tb_pesanan', array('id_pesanan' => $id))->row();
+        return $this->db->get_where('tb_pesanan', array('id' => $id))->row();
     }
 
     // Create

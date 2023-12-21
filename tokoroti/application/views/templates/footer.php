@@ -15,6 +15,7 @@
  <script src="<?php echo base_url() ?>assets/js/demo/chart-area-demo.js"></script>
  <script src="<?php echo base_url() ?>assets/js/demo/chart-pie-demo.js"></script>
  <script src="<?php echo base_url() ?>assets/js/select2.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
  <script>
      $('#select2').select2()
  </script>
